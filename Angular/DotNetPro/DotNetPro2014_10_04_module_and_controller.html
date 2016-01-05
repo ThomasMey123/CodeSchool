@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body ng-app="myApp" ng-controller="CalculatorController">
+    <script type="text/javascript" src="angular.js"></script>
+    <input type="number" ng-model="first" /> +
+    <input type="number" ng-model="second" />
+    <button ng-click="add(first,second)">
+        =
+    </button>
+    {{sum}}
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('CalculatorController', ['$scope', function ($scope) {
+            $scope.add = function (left, right) {
+                $scope.sum = left + right;
+            };
+        }]);
+    </script>
+</body>
+</html>

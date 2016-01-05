@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body ng-app="myApp" ng-controller="CounterController">
+    <script src="angular.js"></script>
+    <script>
+        var app = angular.module('myApp', []);
+
+        app.directive(
+            'helloWorld', [ function() {
+                return {
+                    template: '<p>Hello World!</p>',
+                    restrict: 'E'
+                    // 'E' means that hello-world will be an HTML element
+                    // 'A' stands for Attribute and 'C' for CSS class, these can be combined, e.g. 'ACE'
+                    // the HTML snippet can be loaded from a file with templateURL, e.g.: "templateURL: 'helloWorldSnippet.html'"
+                    // If the html element shall not be embedded but replaced, use: replace: true
+                }
+            }
+         ])
+    </script>
+
+    <!-- Note that the reference to 'helloWorld' is written hello-world here.... -->
+    <hello-world></hello-world>
+
+</body>
+</html>

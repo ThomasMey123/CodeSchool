@@ -1,0 +1,91 @@
+html, body, h1, h2, h3, h4, ul, ol, li, p, a {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #000000;
+    margin: 0 0 15px 0;
+	text-align: center;
+}
+
+h2 {
+    color: #000000;
+    margin: 15px 0 15px;
+	text-align:center;
+}
+
+h3 {
+    color: #333333;
+    margin: 20px 0 5px 0;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 0 0 2px 0;
+}
+
+h4 {
+    color: #666666;
+}
+
+p {
+    color: #444444;
+}
+
+a {
+    color: #440000;
+}
+
+ul {
+    padding: 0 0 0 30px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+body {
+    padding: 0 0 0 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ol {
+    padding: 20px;
+}
+
+h4 {
+    margin: 10px;
+}
+.nav {
+    padding-left: 40px;
+	text-align: center;
+}
+.nav a {
+    color : #0000af;
+    text-decoration: none;
+}
+.nav li {
+    display: inline;
+}
+
+.header {
+	padding: 10px,10px,10px,10px;
+	background-color: #b56663;
+}
+
+.header a {
+	color: #ffffff;
+}
+
+.header h1 {
+	color: #ffffff;
+}
+
+.main-content {
+	width: 500px;
+	padding: 20px,20px,20px,20px;
+	border: 1px solid #dddddd;
+	margin: 30px auto 0 auto;
+}

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body ng-app="myApp" ng-controller="CounterController">
+    <script src="angular.js"></script>
+    <script>
+        var app = angular.module('myApp', []);
+
+        app.directive(
+            'helloWorld', [ function() {
+                return {
+                    template: '<p>Hello World!</p>'
+                }
+            }
+         ])
+    </script>
+
+    <!-- Note that the reference to 'helloWorld' is written hello-world here.... -->
+    <div hello-world></div>
+
+
+
+</body>
+</html>

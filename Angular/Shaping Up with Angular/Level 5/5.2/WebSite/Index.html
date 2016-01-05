@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="store">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <style type="text/css">
+        .ng-invalid.ng-dirty {
+            border-color: #FA787E;
+        }
+        .ng-valid.ng-dirty {
+            border-color: #78FA89;
+        }
+    </style>
+    <title></title>
+</head>
+<body ng-controller="StoreController as store">
+    <div ng-repeat="product in store.products">
+        <h3 product-title></h3>
+        <img ng-src="{{product.images[0].thumb}}" />
+        <button ng-show="product.canPurchase"> Add to cart </button>
+        <!-- New feature: A directive with a controller-->
+        <product-panels>
+ 
+        </product-panels>
+    </div>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="products.js"></script>
+</body>
+</html>
