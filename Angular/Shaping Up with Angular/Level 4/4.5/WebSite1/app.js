@@ -6,8 +6,8 @@
         var store = this;
         store.products = [];
 
-        $http.get('http://localhost:37018/products.json').success(function (data) {
-            store.products = data;
+        $http.get('http://localhost:63342/4.5/WebSite1/products.json').success(function (data) {
+            store.products  = data.products;
         });
     }]);
 
