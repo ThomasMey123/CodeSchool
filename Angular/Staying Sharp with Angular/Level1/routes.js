@@ -7,7 +7,7 @@ angular.module('NoteWrangler')
         controllerAs: 'indexController'
     })
 
-        .when('/notes/:id', {
+    .when('/notes/:id', {
             templateUrl: 'showNotes.html',
             controller: 'NotesShowController',
             controllerAs: 'showController'
